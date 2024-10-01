@@ -1,4 +1,4 @@
-#include <servo.h>
+#include <Servo.h>
 
 Servo motore1 , motore2 , motore3 , motore4 , motore5 , motore6;
 void setup() 
@@ -27,18 +27,18 @@ void MovementRobotKeyBoard()
 
     switch (comandoTastiera) 
     {
-      case "w":
+      case 'w':
         motore1.write(90);
         break;
 
-      case "d":
+      case 'd':
         motore2.write(90);
               
-      case "s":
+      case 's':
         motore2.write(90);
         break;
 
-      case "a":
+      case 'a':
         motore2.write(90);
         break;
     }
